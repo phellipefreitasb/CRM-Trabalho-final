@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 23,
   "shouldTruncate": false,
-  "text": "{{ \"Email: \" + (tblLeads.triggeredRow?.email || \"\") }}",
+  "text": "{{ \"Email: \" + (appsmith.store.leadSelecionado?.email || \"\") }}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 12,

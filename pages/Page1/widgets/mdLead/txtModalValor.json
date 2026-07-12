@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 18,
   "shouldTruncate": false,
-  "text": "{{ \"Valor estimado: R$ \" + (tblLeads.triggeredRow?.valor_estimado || 0) }}",
+  "text": "{{ \"Valor estimado: R$ \" + (appsmith.store.leadSelecionado?.valor_estimado || \"\") }}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 20,

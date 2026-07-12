@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 19,
   "shouldTruncate": false,
-  "text": "{{ \"Status atual: \" + (tblLeads.triggeredRow?.status || \"\") }}",
+  "text": "{{ \"Status atual: \" + (appsmith.store.leadSelecionado?.status || \"\") }}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 24,

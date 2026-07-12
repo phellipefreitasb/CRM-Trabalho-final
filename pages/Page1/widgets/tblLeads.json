@@ -198,7 +198,7 @@
       "label": "Detalhes",
       "labelColor": "#FFFFFF",
       "notation": "standard",
-      "onClick": "{{\n  storeValue(\"leadSelecionado\", tblLeads.triggeredRow)\n    .then(() => {\n      showModal(\"mdLead\");\n    })\n    .then(() => {\n      get_interacoes.run();\n    })\n}}",
+      "onClick": "{{ storeValue(\"leadSelecionado\", tblLeads.triggeredRow) .then(() => { showModal(\"mdLead\"); }) .then(() => { get_interacoes.run(); }) }}",
       "originalId": "customColumn1",
       "sticky": "",
       "textSize": "0.875rem",
