@@ -1,0 +1,4 @@
+UPDATE leads
+SET status = {{ selStatusModal.selectedOptionValue }}
+WHERE id = {{ Number(appsmith.store.leadSelecionado?.id || 0) }}
+RETURNING *;

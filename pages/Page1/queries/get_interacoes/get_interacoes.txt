@@ -1,0 +1,9 @@
+SELECT
+  id,
+  lead_id,
+  vendedor,
+  descricao,
+  data_interacao
+FROM historico_interacoes
+WHERE lead_id = {{ Number(appsmith.store.leadSelecionado?.id || 0) }}
+ORDER BY data_interacao DESC;

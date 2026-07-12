@@ -1,0 +1,54 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 81,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "jtpjgyy2dx",
+  "leftColumn": 49,
+  "minWidth": 120,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 18,
+  "needsErrorInfo": false,
+  "onClick": "{{\n  update_lead_status.run(() => {\n    insert_interacao.run(() => {\n      get_interacoes.run(() => {\n        get_leads_count.run(() => {\n          get_leads.run(() => {\n            showAlert(\"Lead atualizado com sucesso!\", \"success\");\n          });\n        });\n      });\n    });\n  });\n}}",
+  "parentId": "2jcmf07w4p",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 61,
+  "text": "Inserir altrações",
+  "topRow": 77,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "loojsxcqym",
+  "widgetName": "btnSalvarLead"
+}

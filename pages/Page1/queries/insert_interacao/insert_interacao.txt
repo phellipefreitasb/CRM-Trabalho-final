@@ -1,0 +1,18 @@
+INSERT INTO historico_interacoes (
+  lead_id,
+  vendedor,
+  descricao,
+  data_interacao
+)
+VALUES (
+  {{ tblLeads.triggeredRow?.id || 0 }},
+  {{ inpVendedor.text || "Vendedor não informado" }},
+  {{ txtNovaInteracao.text || "Status atualizado sem observação." }},
+  NOW()
+)
+RETURNING
+  id,
+  lead_id,
+  vendedor,
+  descricao,
+  data_interacao

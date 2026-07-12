@@ -1,0 +1,14 @@
+SELECT
+  COUNT(*) AS total
+FROM leads
+WHERE
+  (
+    {{ inpBusca.text || "" }} = ''
+    OR nome ILIKE '%' || {{ inpBusca.text || "" }} || '%'
+    OR empresa ILIKE '%' || {{ inpBusca.text || "" }} || '%'
+  )
+  AND
+  (
+    {{ selFiltroStatus.selectedOptionValue || "Todos" }} = 'Todos'
+    OR status = {{ selFiltroStatus.selectedOptionValue || "Todos" }}
+  )

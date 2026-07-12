@@ -1,0 +1,13 @@
+SELECT
+  id,
+  nome,
+  empresa,
+  email,
+  telefone,
+  origem_lead,
+  status,
+  valor_estimado,
+  data_criacao
+FROM leads
+ORDER BY id DESC
+LIMIT 10;

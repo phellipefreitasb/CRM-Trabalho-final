@@ -1,0 +1,55 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 43,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "yn0nkukt3c",
+  "leftColumn": 19,
+  "minWidth": 120,
+  "mobileBottomRow": 42,
+  "mobileLeftColumn": 20,
+  "mobileRightColumn": 36,
+  "mobileTopRow": 38,
+  "needsErrorInfo": false,
+  "onClick": "{{\n  update_lead_status.run(() => {\n    get_leads.run();\n\n    storeValue(\"leadSelecionado\", {\n      ...appsmith.store.leadSelecionado,\n      status: selStatusModal.selectedOptionValue\n    });\n\n    showAlert(\"Status atualizado com sucesso!\", \"success\");\n  })\n}}",
+  "parentColumnSpace": 13.9375,
+  "parentId": "2jcmf07w4p",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 35,
+  "text": "Salvar status",
+  "topRow": 39,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "hi5z42rjtz",
+  "widgetName": "Button1"
+}

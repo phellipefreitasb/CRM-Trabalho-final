@@ -1,0 +1,24 @@
+SELECT
+  id,
+  nome,
+  empresa,
+  email,
+  telefone,
+  status,
+  valor_estimado,
+  data_criacao
+FROM leads
+WHERE
+  (
+    {{ inpBusca.text || "" }} = ''
+    OR nome ILIKE '%' || {{ inpBusca.text || "" }} || '%'
+    OR empresa ILIKE '%' || {{ inpBusca.text || "" }} || '%'
+  )
+  AND
+  (
+    {{ selFiltroStatus.selectedOptionValue || "Todos" }} = 'Todos'
+    OR status = {{ selFiltroStatus.selectedOptionValue || "Todos" }}
+  )
+ORDER BY id DESC
+LIMIT {{ tblLeads.pageSize || 5 }}
+OFFSET {{ ((tblLeads.pageNo || 1) - 1) * (tblLeads.pageSize || 5) }}

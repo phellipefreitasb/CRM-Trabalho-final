@@ -1,0 +1,60 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 37,
+  "boxShadow": "none",
+  "defaultOptionValue": "Novo",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "qt01azb7x3",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Novo status",
+  "labelTextColor": "#18181b",
+  "labelTextSize": "1.25rem",
+  "labelWidth": 5,
+  "leftColumn": 19,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 34,
+  "mobileRightColumn": 54,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 11.28125,
+  "parentId": "2jcmf07w4p",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 39,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"label\": \"Novo\",\n    \"value\": \"Novo\"\n  },\n  {\n    \"label\": \"Em Contato\",\n    \"value\": \"Em Contato\"\n  },\n  {\n    \"label\": \"Qualificado\",\n    \"value\": \"Qualificado\"\n  },\n  {\n    \"label\": \"Proposta Enviada\",\n    \"value\": \"Proposta Enviada\"\n  },\n  {\n    \"label\": \"Fechado\",\n    \"value\": \"Fechado\"\n  },\n  {\n    \"label\": \"Perdido\",\n    \"value\": \"Perdido\"\n  }\n]",
+  "topRow": 30,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "c1gbhfeckp",
+  "widgetName": "selStatusModal"
+}

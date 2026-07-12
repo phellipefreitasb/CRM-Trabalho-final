@@ -1,0 +1,49 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 81,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonStyle": "PRIMARY",
+  "buttonVariant": "SECONDARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "jtpjgyy2dx",
+  "leftColumn": 40,
+  "minWidth": 120,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 31,
+  "mobileRightColumn": 47,
+  "mobileTopRow": 18,
+  "needsErrorInfo": false,
+  "onClick": "{{closeModal(mdLead.name);}}",
+  "parentId": "2jcmf07w4p",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 49,
+  "text": "Fechar",
+  "topRow": 77,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "w1it18c4zd",
+  "widgetName": "btnFecharModal"
+}
